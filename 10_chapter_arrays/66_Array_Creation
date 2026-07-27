@@ -1,0 +1,10 @@
+let browsers= ["Chrome", "Firefox", "Edge", "Safari"];
+//Array consturctor
+let scores = new Array(3); // Array with 3 empty slots, lenght of 3
+let scores1 = new Array(10, 20, 30); // Array with 3 elements, with values 10, 20, 30
+
+let test = new Array.of(10, 20, 30, 40, 50); // Array with 5 elements, wih values 10, 20, 30, 40, 50
+
+let chars = Array.from("Hello"); // 'h', 'e', 'l', 'l', 'o' - Array with 5 elements, with values 'h', 'e', 'l', 'l', 'o'
+
+
