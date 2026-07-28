@@ -21,3 +21,4 @@ function greet()
 }
 
 console.log("function greet() returned: " + greet()); // undefined, if function does not return any value, it is considered undefined
+
