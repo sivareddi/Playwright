@@ -17,4 +17,5 @@ if (typeof inputNumber !== 'number' || isNaN(inputNumber)) {
     }
     output = results.join(' ');
     console.log(output);
+    console.log("******************End of program ***********************");
 }
