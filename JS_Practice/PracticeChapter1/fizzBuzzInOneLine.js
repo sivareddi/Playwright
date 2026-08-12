@@ -1,4 +1,4 @@
-let maxNumber = undefined;
+let maxNumber = 30;
 let fizzBuzzSingleLinePrintFormat = ""; 
 let spaceCharacter = " ";
 
@@ -10,23 +10,31 @@ else
 {
 for (let i = 1; i <= maxNumber; i++)
 {
+
+    if (i === 1)
+    {
+        spaceCharacter = "";
+    }
+    else 
+    {
+        spaceCharacter = " ";
+    }
     if (i % 3 === 0 && i % 5 === 0)
     {
         // console.log("FizzBuzz");
-        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + "FizzBuzz" + spaceCharacter;
+        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + spaceCharacter + "FizzBuzz" ;
 
     } else if (i % 3 === 0)
     {
         // console.log("Fizz");
-        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + "Fizz" + spaceCharacter;
+        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat  + spaceCharacter +  "Fizz" ;
     } else if (i % 5 === 0)
     {
         // console.log("Buzz");
-        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + "Buzz" + spaceCharacter;
+        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + spaceCharacter +  "Buzz" ;
     } else 
     {
-        // console.log(i);
-        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + i + spaceCharacter;
+        fizzBuzzSingleLinePrintFormat = fizzBuzzSingleLinePrintFormat + spaceCharacter + i;
     }
 
 }

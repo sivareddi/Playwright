@@ -1,3 +1,9 @@
+/*
+*
+**
+***
+****
+*/
 // Write your solution here
 //const data = require('fs').readFileSync(0, 'utf8');
 const numberOfRowsToPrint = 4 //= parseInt(data.trim(), 10);
@@ -10,13 +16,12 @@ if (numberOfRowsToPrint <= 0)
 }
 for (let i = 0; i < numberOfRowsToPrint; i++)
 {
-   
+    formatString = "";
     for (let j = 0; j <= i; j++)
     { 
         formatString = formatString + "*";
     }
-    formatString = formatString + " ";
-    formatString = formatString + newLineString;
+    process.stdout.write(formatString);
+    console.log();
     
 }
-console.log(formatString);
