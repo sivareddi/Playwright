@@ -8,7 +8,7 @@
 //const data = require('fs').readFileSync(0, 'utf8');
 const numberOfRowsToPrint = 4 //= parseInt(data.trim(), 10);
 let formatString = "";
-let newLineString = "\n";
+//let newLineString = "\n";
 
 if (numberOfRowsToPrint <= 0)
 { 

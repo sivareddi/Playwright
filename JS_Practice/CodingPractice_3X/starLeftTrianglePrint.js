@@ -11,7 +11,7 @@
 const n = 4 //= parseInt(data.trim(), 10);
 let formatString = "";
 
-if (n <= 0)
+if (n <= 0 || !(Number.isInteger(n)))
 { 
     console.log("Invalid number");
 }
