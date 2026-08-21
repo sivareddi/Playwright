@@ -14,14 +14,14 @@ if (numberOfRowsToPrint <= 0)
 { 
     console.log("Invalid number");
 }
-for (let i = 0; i < numberOfRowsToPrint; i++)
+for (let i = 1; i <= numberOfRowsToPrint; i++)
 {
     formatString = "";
-    for (let j = 0; j <= i; j++)
+    for (let j = 1; j <= i; j++)
     { 
         formatString = formatString + "*";
     }
-    process.stdout.write(formatString);
-    console.log();
+   // process.stdout.write(formatString);
+    console.log(formatString);
     
 }

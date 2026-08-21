@@ -5,3 +5,6 @@
 # iq-notes
 - Use "IQ_Notes" (uppercase I, Q, underscore, capital N) for the IQ notes folder name, not lowercase "iq_notes". Confidence: 0.65
 
+# git
+- This project runs on Windows shell (no heredoc). Use multiple `git commit -m` flags instead of `git commit -F - <<'EOF'`. Confidence: 0.70
+

@@ -22,7 +22,8 @@ for (let i = 0; i < n; i++)
     { 
         formatString = formatString + "*";
     }
-    process.stdout.write(formatString);
-    console.log();
+   // process.stdout.write(formatString);
+   //console.log();
+    console.log(formatString);
     
 }

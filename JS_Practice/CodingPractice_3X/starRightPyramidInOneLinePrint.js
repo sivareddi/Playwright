@@ -7,14 +7,17 @@ if (numberOfRowsToPrint <= 0)
 { 
     console.log("Invalid number");
 }
-for (let i = 0; i < numberOfRowsToPrint; i++)
+for (let i = 1; i <= numberOfRowsToPrint; i++)
 {
    
-    for (let j = 0; j <= i; j++)
+    for (let j = 1; j <= (2*(i-1))+1; j++)
     { 
-        formatString = formatString + "*";
+        formatString = formatString + "*" ;
     }
-    formatString = formatString + " ";
-
+    if(i < numberOfRowsToPrint)
+    {
+        formatString = formatString + " " ;
+    }
+    
 }
 console.log(formatString);
