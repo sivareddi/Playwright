@@ -3,7 +3,7 @@
 const numberOfRowsToPrint = 4 //= parseInt(data.trim(), 10);
 let formatString = "";
 
-if (numberOfRowsToPrint <= 0)
+if (numberOfRowsToPrint <= 0 || !(Number.isInteger(n)))
 { 
     console.log("Invalid number");
 }
