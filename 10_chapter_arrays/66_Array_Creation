@@ -1,10 +1,26 @@
 let browsers= ["Chrome", "Firefox", "Edge", "Safari"];
-//Array consturctor
-let scores = new Array(3); // Array with 3 empty slots, lenght of 3
-let scores1 = new Array(10, 20, 30); // Array with 3 elements, with values 10, 20, 30
+console.log(browsers); // Output: ['Chrome', 'Firefox', 'Edge', 'Safari']
 
-let test = new Array.of(10, 20, 30, 40, 50); // Array with 5 elements, wih values 10, 20, 30, 40, 50
+let scores = new Array(3); // Array with 3 empty slots, lenght of 3
+console.log(scores); // Output: [ <3 empty items> ]
+
+let scores1 = new Array(10, 20, 30); // Array with 3 elements, with values 10, 20, 30
+console.log(scores1); // Output: [10, 20, 30]
+
+let test = Array.of(10, 20, 30, 40, 50); // Array with 5 elements, wih values 10, 20, 30, 40, 50
+console.log(test); // Output: [10, 20, 30, 40, 50]
+for (let i of test)
+{
+    process.stdout.write(i + " ");
+}
+console.log();
 
 let chars = Array.from("Hello"); // 'h', 'e', 'l', 'l', 'o' - Array with 5 elements, with values 'h', 'e', 'l', 'l', 'o'
+console.log(chars); // Output: ['H', 'e', 'l', 'l', 'o']
+for (let char of chars)
+{
+    //console.log(char);
+    process.stdout.write(char + " ");
+}
 
-
+// console.log(chars); // Output: ['H', 'e', 'l', 'l', 'o']
